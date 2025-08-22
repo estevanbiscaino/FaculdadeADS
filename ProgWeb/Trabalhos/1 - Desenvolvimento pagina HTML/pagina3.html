@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento de Pagina HTML</title>
+<style>
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        body {
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: #f1f1f1;
+                color: #0f0f0f;
+            }
+        }
+
+
+        img#friedrich {
+            position: fixed;
+            right: 0;
+            max-width: 40vw;
+            height: auto;
+            transform: scaleX(-1);
+            bottom: 0;
+            right: -15vw;
+
+        }
+
+        @media (max-width: 1390px) {
+            img#friedrich {
+                position: fixed;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                max-width: 90vw;
+                height: auto;
+                max-height: 55vw;
+            }
+
+            div#conteudo {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+        }
+
+        @media (max-width: 1399px) {
+            img#friedrich {
+                position: static;
+                transform: none;
+                bottom: 0;
+                left: 50%;
+                height: auto;
+                max-height: 50%;
+                margin-bottom: -100px;
+            }
+        }
+
+        div#conteudo {
+            width: 80%;
+            text-align: center;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h1>Controvérsias e Críticas</h1>
+        <h2><b>Relação com o Nazismo</b></h2>
+        <p>
+            Apesar de Nietzsche ter morrido em 1900, seus escritos foram posteriormente distorcidos por seu irmão
+            <i>Friedrich Wilhelm Nietzsche</i> e por propagandistas nazistas. Conceitos como o <i>Übermensch</i> foram
+            indevidamente associados à supremacia racial, mesmo que Nietzsche tenha criticado o nacionalismo e o
+            antissemitismo.
+        </p>
+        <p>
+            Essa apropriação ideológica gerou debates intensos sobre a interpretação de sua obra, e estudiosos modernos
+            enfatizam que tais conexões são equivocadas e distorcem o pensamento filosófico original.
+        </p>
+        <hr>
+        <h2><b>Críticas à Moral e Religião</b></h2>
+        <p>
+            Nietzsche foi fortemente criticado por sua análise radical da moral tradicional e pela frase
+            <b>“Deus está morto”</b>. Para muitos, seu estilo provocativo e suas ideias sobre a superação de valores
+            estabelecidos eram chocantes, gerando controvérsias acadêmicas e culturais.
+        </p>
+        <p>
+            Filósofos conservadores e religiosos viram suas teorias como uma ameaça à ordem social, mas sua obra também
+            inspirou movimentos intelectuais progressistas e debates sobre liberdade e ética.
+        </p>
+        <hr>
+        <h2><b>Recepção Acadêmica e Cultural</b></h2>
+        <p>
+            Durante sua vida, Nietzsche teve reconhecimento limitado e enfrentou críticas severas de parte da comunidade
+            acadêmica. Após sua morte, sua obra ganhou relevância e passou a influenciar filósofos, artistas e
+            escritores,
+            mas as interpretações variaram bastante, gerando controvérsias sobre seu verdadeiro significado.
+        </p>
+        <p>
+            A discussão sobre sua obra permanece até hoje, especialmente no que diz respeito à ética, ao existencialismo
+            e
+            à crítica à moralidade tradicional.
+        </p>
+
+        <hr>
+        <nav>
+            <a href="index.html">Inicio |</a>
+            <a href="pagina1.html">Biografia |</a>
+            <a href="pagina2.html">Principais Obras |</a>
+            <a href="https://www.youtube.com/watch?v=CkIoTPP2Qbo" target="_blank">Documentário</a>
+        </nav>
+    </div>
+
+    <picture>
+        <source media="(max-width:320px)" srcset="..imagens/fundo320.png">
+        <source media="(min-width:1400px)" srcset="imagens/fundo800.png">
+        <img id="friedrich" src="imagens/fundo1200.png" alt="Imagem ilustrativa do filósofo Friedrich Nietzsche">
+    </picture>
+</body>
+
+</html>

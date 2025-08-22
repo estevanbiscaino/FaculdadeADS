@@ -5,42 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desenvolvimento de Pagina HTML</title>
-
-    <!-- Camada interna de estilos -->
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            text-align: left;
-        }
-
-        h1,
-        h2 {
+        h1, h2 {
             text-align: center;
         }
 
-        body { dsds 
-            background-color: #232626;
-            color: #EBF1F2;
-        }
-        img#friedrich {
-    position: fixed;        /* Fixa em relação à tela (não rola junto com a página) */
-    bottom: 0;              /* Cola no fundo */
-    left: 0;                /* Cola na esquerda */
-    max-width: 40vw;        /* Limita a largura a 20% da tela */
-    height: auto;           /* Mantém proporção */
+        body {
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: #f1f1f1;
+                color: #0f0f0f;
+            }
         }
 
+
+        img#friedrich {
+            position: fixed;
+            right: 0;
+            max-width: 40vw;
+            height: auto;
+            transform: scaleX(-1);
+            bottom: 0;
+
+
+        }
+
+        @media (max-width: 1390px) {
+            img#friedrich {
+                position: fixed;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                max-width: 90vw;
+                height: auto;
+                max-height: 55vw;
+            }
+
+            div#conteudo {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+        }
+        
+                @media (max-width: 1399px) {
+            img#friedrich {
+                position: static;
+                transform: none;
+                bottom: 0;
+                left: 50%;
+                height: auto;
+                max-height: 50%;
+                margin-bottom: -500px;
+            }}
+
+        div#conteudo {
+            width: 80%;
+            text-align: center;
+            margin-top: 2em;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Friedrich Nietzsche</h1>
-    <h2>Uma hisória</h2>
+    <div id="conteudo">
+        <h1>Friedrich Nietzsche</h1>
+        <h2>Uma história</h2> <br>
+        <p><b>Friedrich Nietzsche</b> foi um filósofo alemão do século XIX, conhecido por suas ideias inovadoras e
+            desafiadoras.</p>
+        <p>Suas obras <i>impactaram profundamente</i> a filosofia moderna, questionando a moral tradicional e os valores
+            estabelecidos.</p>
+        <p>Nietzsche também é famoso pela frase "Deus está morto", que provoca reflexão sobre o sentido da vida na
+            sociedade contemporânea.</p>
+
+        <hr>
+            <nav>
+            <a href="pagina1.html">Biografia |</a>
+            <a href="pagina2.html">Principais Obras |</a>
+            <a href="pagina3.html">Controvérsias e Críticas |</a>
+            <a href="https://www.youtube.com/watch?v=CkIoTPP2Qbo" target="_blank">Documentário</a>
+        </nav>
+    </div>
+
     <picture>
-    <source media="(max-width:520px)" srcset="imagens/fundo520.png">
-    <source media="(max-width:800px)" srcset="imagens/fundo800.png">
-    <img id="friedrich" src="imagens/fundo1200.png" alt="Imagem ilustrativa do filósofo Friedrich Nietzsche">
+            <source media="(max-width:320px)" srcset="..imagens/fundo320.png">
+            <source media="(min-width:1400px)" srcset="imagens/fundo800.png">
+            <img id="friedrich" src="imagens/fundo1200.png" alt="Imagem ilustrativa do filósofo Friedrich Nietzsche">
     </picture>
 </body>
 

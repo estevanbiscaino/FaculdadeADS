@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento de Pagina HTML</title>
+    <style>
+        h1, h2 {
+            text-align: center;
+        }
+
+        body {
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: #f1f1f1;
+                color: #0f0f0f;
+            }
+        }
+
+
+        img#friedrich {
+            position: fixed;
+            right: 0;
+            max-width: 40vw;
+            height: auto;
+            transform: scaleX(-1);
+            bottom: 0;
+            right: -15vw;
+
+        }
+
+        @media (max-width: 1390px) {
+            img#friedrich {
+                position: fixed;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                max-width: 90vw;
+                height: auto;
+                max-height: 55vw;
+            }
+
+            div#conteudo {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+        }
+        
+                @media (max-width: 1399px) {
+            img#friedrich {
+                position: static;
+                transform: none;
+                bottom: 0;
+                left: 50%;
+                height: auto;
+                max-height: 50%;
+                margin-bottom: -100px;
+            }}
+
+        div#conteudo {
+            width: 80%;
+            text-align: center;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h1>Friedrich Nietzsche</h1>
+        <h2>Biografia</h2> <br>
+        <p><b>Friedrich Wilhelm Nietzsche</b> nasceu em 15 de outubro de 1844, em Röcken, uma pequena cidade da Saxônia, na Alemanha. Filho de um pastor luterano, teve uma infância marcada pela disciplina religiosa e pela tragédia precoce: perdeu o pai aos cinco anos e o irmão mais novo pouco tempo depois. Desde cedo demonstrou grande aptidão intelectual, o que o levou a estudar em renomadas instituições de ensino. Interessado inicialmente na <i>teologia</i>, acabou se dedicando à <i>filologia clássica</i>, campo no qual se destacou pela habilidade em analisar textos da Grécia Antiga.</p>
+        
+        <p>Aos 24 anos, Nietzsche se tornou professor na Universidade da Basileia, na Suíça, um feito extraordinário para alguém tão jovem. No entanto, sua saúde frágil — marcada por enxaquecas constantes, problemas de visão e distúrbios digestivos — o obrigou a abandonar a carreira acadêmica poucos anos depois. Esse afastamento, por outro lado, deu início a um dos períodos mais produtivos de sua vida, quando escreveu obras que transformariam a filosofia moderna. Seus textos eram inovadores, repletos de crítica à tradição ocidental, ao cristianismo e à forma como a sociedade compreendia a moralidade.</p>
+        
+        <p>Nietzsche defendia a necessidade de superar os valores herdados e criar novas formas de existência, algo que ele chamou de transvaloração dos valores. Ao afirmar que <i>“Deus está morto”</i>, não celebrava um ateísmo simplista, mas apontava para a crise cultural e espiritual que a modernidade enfrentava. Seu conceito de <b>“vontade de poder”</b> e a figura do <b>“além-do-homem” (Übermensch)</b> se tornaram centrais em sua filosofia, inspirando reflexões em diversas áreas, da literatura à psicologia.</p>
+        
+        <p>Apesar de sua genialidade, Nietzsche viveu isolado e teve uma vida pessoal marcada por dificuldades emocionais. Em 1889, sofreu um colapso mental em Turim, permanecendo em estado de fragilidade psicológica até sua morte em 1900. Sua irmã, Elisabeth Förster-Nietzsche, assumiu a tarefa de organizar e divulgar seus escritos, embora tenha manipulado parte de suas ideias para aproximá-las de ideologias políticas posteriores, o que gerou inúmeras controvérsias.</p>
+        
+        <p>O legado de Nietzsche é imenso. Ele influenciou pensadores como <i>Sigmund Freud</i>, <i>Martin Heidegger</i> e <i>Michel Foucault</i>, além de impactar escritores, artistas e movimentos culturais em todo o mundo. Suas obras mais conhecidas, como <i>Assim Falou Zaratustra</i>, <i>Além do Bem e do Mal</i> e <i>A Genealogia da Moral</i>, permanecem entre os textos filosóficos mais estudados e discutidos. Mais de um século após sua morte, Nietzsche continua sendo uma das vozes mais provocativas da filosofia, desafiando a humanidade a repensar seus valores e a encontrar novos caminhos para a existência.</p>
+        <hr>
+            <nav>
+            <a href="index.html">Inicio |</a>
+            <a href="pagina2.html">Principais Obras |</a>
+            <a href="pagina3.html">Controvérsias e Críticas |</a>
+            <a href="https://www.youtube.com/watch?v=CkIoTPP2Qbo" target="_blank">Documentário</a>
+        </nav>
+    </div>
+<div>
+    <picture>
+            <source media="(max-width:320px)" srcset="..imagens/fundo320.png">
+            <source media="(min-width:1400px)" srcset="imagens/fundo800.png">
+            <img id="friedrich" src="imagens/fundo1200.png" alt="Imagem ilustrativa do filósofo Friedrich Nietzsche">
+    </picture>
+<div>
+
+</body>
+
+</html>

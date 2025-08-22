@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento de Pagina HTML</title>
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        body {
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: #f1f1f1;
+                color: #0f0f0f;
+            }
+        }
+
+
+        img#friedrich {
+            position: fixed;
+            right: 0;
+            max-width: 40vw;
+            height: auto;
+            transform: scaleX(-1);
+            bottom: 0;
+            right: -15vw;
+
+        }
+
+        @media (max-width: 1390px) {
+            img#friedrich {
+                position: fixed;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                max-width: 90vw;
+                height: auto;
+                max-height: 55vw;
+            }
+
+            div#conteudo {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+        }
+
+        @media (max-width: 1399px) {
+            img#friedrich {
+                position: static;
+                transform: none;
+                bottom: 0;
+                left: 50%;
+                height: auto;
+                max-height: 50%;
+                margin-bottom: -100px;
+            }
+        }
+
+        div#conteudo {
+            width: 80%;
+            text-align: center;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h1>Principais Obras</h1>
+        <h2><b>Assim Falou Zaratustra</b> <small>(1883–1885)</small></h2>
+        <p>
+            Escrito entre 1883 e 1885, <i>Assim Falou Zaratustra</i> é um romance filosófico no qual o profeta
+            Zaratustra
+            desce da montanha para anunciar a superação do homem comum. Aqui Nietzsche apresenta conceitos centrais como
+            o
+            <i>Übermensch</i> (além-do-homem), a <i>vontade de poder</i> e o <i>eterno retorno</i>. Com linguagem
+            poética e
+            aforística, o livro questiona valores morais herdados e convoca o leitor a criar novos sentidos para a vida.
+        </p>
+        <p>
+            A obra ficou marcada pela expressão **“<b>Deus está morto</b>”**, que simboliza o colapso dos fundamentos
+            metafísicos e religiosos tradicionais. Sua influência atravessa a filosofia, a psicologia e as artes,
+            tornando-se
+            um dos textos mais comentados de Nietzsche.
+        </p>
+        <hr>
+        <h2><b>Além do Bem e do Mal</b> <small>(1886)</small></h2>
+        <p>
+            Publicado como um “<i>Prelúdio a uma Filosofia do Futuro</i>”, <i>Além do Bem e do Mal</i> reúne aforismos
+            que
+            desconstroem os <b>preconceitos dos filósofos</b> e interrogam a origem dos juízos morais. Nietzsche critica
+            a
+            pretensão de neutralidade da razão e propõe a <i>transvaloração de todos os valores</i>, ao mostrar que
+            nossas
+            crenças estão ligadas a perspectivas e pulsões vitais.
+        </p>
+        <p>
+            Em nove partes, o livro aborda o espírito livre, a história natural da moral e a contraposição entre moral
+            “senhorial” e “escrava”. Seu tom incisivo e irônico inaugura um estilo crítico que influenciou intensamente
+            o
+            pensamento do século XX.
+        </p>
+        <hr>
+        <h2><b>Genealogia da Moral</b> <small>(1887)</small></h2>
+        <p>
+            Em <i>Genealogia da Moral</i>, Nietzsche investiga <b>como</b> surgiram os valores de “bem” e “mal” e
+            <b>sob quais condições</b> passaram a dominar o Ocidente. Ao distinguir entre uma moral dos <i>senhores</i>,
+            afirmativa e baseada na força, e uma moral dos <i>escravos</i>, nascida do ressentimento, o autor revela
+            mecanismos de inversão de valores que sustentam a ética cristã.
+        </p>
+        <p>
+            Dividida em três ensaios, a obra aprofunda temas como culpa, má consciência e o <i>ideal ascético</i>. Com
+            sua
+            abordagem histórico-crítica, tornou-se referência para correntes como o existencialismo e a genealogia do
+            poder.
+        </p>
+
+        <hr>
+        <nav>
+            <a href="index.html">Inicio |</a>
+            <a href="pagina1.html">Biografia |</a>
+            <a href="pagina3.html">Controvérsias e Críticas |</a>
+            <a href="https://www.youtube.com/watch?v=CkIoTPP2Qbo" target="_blank">Documentário</a>
+        </nav>
+    </div>
+
+    <picture>
+        <source media="(max-width:320px)" srcset="..imagens/fundo320.png">
+        <source media="(min-width:1400px)" srcset="imagens/fundo800.png">
+        <img id="friedrich" src="imagens/fundo1200.png" alt="Imagem ilustrativa do filósofo Friedrich Nietzsche">
+    </picture>
+</body>
+
+</html>
