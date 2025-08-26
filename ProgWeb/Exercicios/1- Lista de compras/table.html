@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,31 +10,39 @@
             padding: 10px;
             border: 1px solid black;
         }
+
         img {
             width: 30px;
             height: 30px;
         }
+
         table {
             border-collapse: collapse;
         }
     </style>
 </head>
+
 <body>
     <table>
+        <caption><h1>Lista de Compras</h1></caption>
         <thead>
-            <h1>Lista de compras</h1>
+            <tr>
+                <th>Imagem</th>
+                <th>Produto</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-            <td rowspan="2"><img src="https://cdn.pixabay.com/photo/2014/04/03/10/26/banana-310449_640.png" alt="" srcset=""></td>
             <tr>
-                <td>JFJSNAKD</td>
+                <td rowspan="2">
+                    <img src="https://media.istockphoto.com/id/120492078/pt/foto/banana.jpg?s=612x612&w=0&k=20&c=KyQf7Qkl7fH60-4QlQ6OBkIqzi9DIBllc2tahSXHsi4=" alt="Banana" width="">
+                </td>
+                <td>Banana Nanica</td>
             </tr>
             <tr>
-                <td>nsdfjnsdfjka</td>
+                <td>Banana Prata</td>
             </tr>
-        </tr>
         </tbody>
     </table>
 </body>
+
 </html>
